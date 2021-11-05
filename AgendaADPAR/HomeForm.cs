@@ -32,7 +32,6 @@ namespace AgendaADPAR
             PF.Show();
         }
 
-
         private void btl_HomeNormal_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
