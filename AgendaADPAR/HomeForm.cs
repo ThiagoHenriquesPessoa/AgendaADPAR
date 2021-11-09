@@ -1,24 +1,18 @@
 ﻿using AgendaADPAR.Views;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AgendaADPAR
 {
     public partial class HomeForm : Form
     {
+        AgendaForm Af = new AgendaForm();
         public HomeForm()
         {
             InitializeComponent();
         }
 
-        private void AbrirFormPainel(object PnlForm)
+        public void AbrirFormPainel(object PnlForm)
         {
             if (this.pnl_Principal.Controls.Count > 0)
             {
@@ -31,6 +25,7 @@ namespace AgendaADPAR
             this.pnl_Principal.Tag = PF;
             PF.Show();
         }
+        
 
         private void btl_HomeNormal_Click(object sender, EventArgs e)
         {
@@ -58,7 +53,27 @@ namespace AgendaADPAR
 
         private void agendaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AbrirFormPainel(new AgendaForm());
+                AbrirFormPainel(Af);
+        }
+
+        private void btn_Fechar_Click(object sender, EventArgs e)
+        {
+            this.pnl_Principal.Controls.RemoveAt(0);
+        }
+
+        private void btn_Ano_Click(object sender, EventArgs e)
+        {
+            
+                AbrirFormPainel(Af);
+        }
+
+        private void btn_Mes_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btn_Mes_MouseEnter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -214,8 +214,8 @@ namespace AgendaADPAR
             // tlp_Home03
             // 
             this.tlp_Home03.ColumnCount = 2;
-            this.tlp_Home03.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tlp_Home03.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp_Home03.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.52632F));
+            this.tlp_Home03.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.47369F));
             this.tlp_Home03.Controls.Add(this.pnl_Principal, 1, 0);
             this.tlp_Home03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlp_Home03.Location = new System.Drawing.Point(3, 83);
@@ -228,9 +228,9 @@ namespace AgendaADPAR
             // pnl_Principal
             // 
             this.pnl_Principal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Principal.Location = new System.Drawing.Point(83, 3);
+            this.pnl_Principal.Location = new System.Drawing.Point(92, 3);
             this.pnl_Principal.Name = "pnl_Principal";
-            this.pnl_Principal.Size = new System.Drawing.Size(760, 403);
+            this.pnl_Principal.Size = new System.Drawing.Size(751, 403);
             this.pnl_Principal.TabIndex = 0;
             // 
             // HomeForm
@@ -275,6 +275,6 @@ namespace AgendaADPAR
         private System.Windows.Forms.ToolStripMenuItem interiorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem1;
         private System.Windows.Forms.TableLayoutPanel tlp_Home03;
-        private System.Windows.Forms.Panel pnl_Principal;
+        public System.Windows.Forms.Panel pnl_Principal;
     }
 }
