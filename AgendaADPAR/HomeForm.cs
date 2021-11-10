@@ -1,4 +1,5 @@
 ﻿using AgendaADPAR.Views;
+using AgendaADPAR.Views.PArnamirimViews.Area01Views;
 using System;
 using System.Windows.Forms;
 
@@ -64,6 +65,26 @@ namespace AgendaADPAR
         private void DepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormPainel(new DepartamentosCoordenacoesForm());
+        }
+
+        private void temploSedeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormPainel(new TemploSedeForm());
+        }
+
+        private void setor01ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormPainel(new Setor01Form());
+        }
+
+        private void setor02ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormPainel(new Setor02Form());
+        }
+
+        private void setor07ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormPainel(new Setor07Form());
         }
     }
 }
