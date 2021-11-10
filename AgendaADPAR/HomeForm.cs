@@ -25,7 +25,7 @@ namespace AgendaADPAR
             this.pnl_Principal.Tag = PF;
             PF.Show();
         }
-        
+
 
         private void btl_HomeNormal_Click(object sender, EventArgs e)
         {
@@ -53,27 +53,17 @@ namespace AgendaADPAR
 
         private void agendaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-                AbrirFormPainel(Af);
+            AbrirFormPainel(new AgendaForm());
         }
 
-        private void btn_Fechar_Click(object sender, EventArgs e)
+        private void cargosAdmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.pnl_Principal.Controls.RemoveAt(0);
+            AbrirFormPainel(new DiretoriaAssessoriaForm());
         }
 
-        private void btn_Ano_Click(object sender, EventArgs e)
+        private void DepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-                AbrirFormPainel(Af);
-        }
-
-        private void btn_Mes_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btn_Mes_MouseEnter(object sender, EventArgs e)
-        {
-            
+            AbrirFormPainel(new DepartamentosCoordenacoesForm());
         }
     }
 }
