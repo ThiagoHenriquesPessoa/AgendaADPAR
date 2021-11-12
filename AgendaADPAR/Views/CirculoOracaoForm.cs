@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgendaADPAR.Views.PArnamirimViews.Area01Views
+namespace AgendaADPAR.Views
 {
-    public partial class Setor01Form : Form
+    public partial class CirculoOracaoForm : Form
     {
-        public Setor01Form()
+        public CirculoOracaoForm()
         {
             InitializeComponent();
         }

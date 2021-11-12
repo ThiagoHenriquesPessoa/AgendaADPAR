@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgendaADPAR.Views.PArnamirimViews.Area02Views
+namespace AgendaADPAR.Views
 {
-    public partial class Setor05Form : Form
+    public partial class InteriorForm : Form
     {
-        public Setor05Form()
+        public InteriorForm()
         {
             InitializeComponent();
         }

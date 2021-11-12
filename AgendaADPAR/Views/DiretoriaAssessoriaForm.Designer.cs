@@ -41,6 +41,8 @@ namespace AgendaADPAR.Views
             this.txb_CATelefone = new System.Windows.Forms.TextBox();
             this.txb_CAEmail = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.dgv_CargosAdm = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
@@ -85,7 +87,7 @@ namespace AgendaADPAR.Views
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.82324F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.17676F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 379F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 387F));
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
@@ -95,6 +97,8 @@ namespace AgendaADPAR.Views
             this.tableLayoutPanel3.Controls.Add(this.txb_CATelefone, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.txb_CAEmail, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.button1, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.button2, 2, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -149,42 +153,62 @@ namespace AgendaADPAR.Views
             // txb_CACargos
             // 
             this.txb_CACargos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txb_CACargos.Location = new System.Drawing.Point(89, 4);
+            this.txb_CACargos.Location = new System.Drawing.Point(87, 4);
             this.txb_CACargos.Name = "txb_CACargos";
-            this.txb_CACargos.Size = new System.Drawing.Size(314, 23);
+            this.txb_CACargos.Size = new System.Drawing.Size(308, 23);
             this.txb_CACargos.TabIndex = 4;
             // 
             // txb_CANome
             // 
             this.txb_CANome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txb_CANome.Location = new System.Drawing.Point(89, 32);
+            this.txb_CANome.Location = new System.Drawing.Point(87, 32);
             this.txb_CANome.Name = "txb_CANome";
-            this.txb_CANome.Size = new System.Drawing.Size(314, 23);
+            this.txb_CANome.Size = new System.Drawing.Size(308, 23);
             this.txb_CANome.TabIndex = 5;
             // 
             // txb_CATelefone
             // 
             this.txb_CATelefone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txb_CATelefone.Location = new System.Drawing.Point(89, 60);
+            this.txb_CATelefone.Location = new System.Drawing.Point(87, 60);
             this.txb_CATelefone.Name = "txb_CATelefone";
-            this.txb_CATelefone.Size = new System.Drawing.Size(314, 23);
+            this.txb_CATelefone.Size = new System.Drawing.Size(308, 23);
             this.txb_CATelefone.TabIndex = 6;
             // 
             // txb_CAEmail
             // 
             this.txb_CAEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txb_CAEmail.Location = new System.Drawing.Point(89, 88);
+            this.txb_CAEmail.Location = new System.Drawing.Point(87, 88);
             this.txb_CAEmail.Name = "txb_CAEmail";
-            this.txb_CAEmail.Size = new System.Drawing.Size(314, 23);
+            this.txb_CAEmail.Size = new System.Drawing.Size(308, 23);
             this.txb_CAEmail.TabIndex = 7;
             // 
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(410, 60);
+            this.textBox1.Location = new System.Drawing.Point(402, 60);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(374, 23);
+            this.textBox1.Size = new System.Drawing.Size(382, 23);
             this.textBox1.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.Location = new System.Drawing.Point(709, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 21);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.Location = new System.Drawing.Point(709, 32);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // dgv_CargosAdm
             // 
@@ -245,5 +269,7 @@ namespace AgendaADPAR.Views
         private System.Windows.Forms.DataGridView dgv_CargosAdm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
